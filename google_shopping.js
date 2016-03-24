@@ -55,14 +55,28 @@ var items = data['items'];
 // Question Five
 
 
-for(var i = 0; i < data['items'].length; i++) {
-	var brand = items[i].product.brand; 
-	if(brand === "Canon" && items[i].product.author.name[0].indexOf("ebay")) {
-		console.log(items[i]);
-	}
-}  
+// for(var i = 0; i < data['items'].length; i++) {
+// 	var brand = items[i].product.brand; 
+// 	if(brand === "Canon" && items[i].product.author.name[0].indexOf("ebay")) {
+// 		console.log(items[i]);
+// 	}
+// }  
 
 
+// Question Six
+
+// var images = items[i].product.images;
+// 	var brand = items[i].product.brand; 
+// 	var price = items[i].product.inventories.price;
+// }
+
+for(var i = 0; i < items.length; i++) {
+	console.log(items[i].product.brand );
+	console.log(items[i].product.images);
+	console.log(items[i].product.inventories[0].price);
+	console.log('-----------')
+}
+	
 
 
 
