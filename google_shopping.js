@@ -21,12 +21,34 @@ var data = require("./products.json")
 
 
 
+// for(var i = 0; i < data['items'].length; i++) {
+// 	var inventories = data['items'][i].product.inventories;
+// 	for(var j = 0; j < inventories.length; j++) {
+// 		if(inventories[j].availability === 'backorder') {
+// 			console.log(inventories[j]);
+// 		}
+// 	}
+// }
+
+
+/* Question Three*/
+
 for(var i = 0; i < data['items'].length; i++) {
-	var inventories = data['items'][i].product.inventories;
-	for(var j = 0; j < inventories.length; j++) {
-		if(inventories[j].availability === 'backorder') {
-			console.log(inventories[j]);
-		}
+	var images = data['items'][i].product.images;
+	if(images.length > 1) {
+		console.log(images);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
