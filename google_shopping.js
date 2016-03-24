@@ -44,13 +44,23 @@ var items = data['items'];
 // Question Four
 
 
-for(var i = 0; i < data['items'].length; i++) {
-	var brand = items[i].product.brand;
-	if(brand === "Canon"){
-		console.log(brand);
-	}
-}
+// for(var i = 0; i < data['items'].length; i++) {
+// 	var brand = items[i].product.brand;
+// 	if(brand === "Canon"){
+// 		console.log(brand);
+// 	}
+// }
 
+
+// Question Five
+
+
+for(var i = 0; i < data['items'].length; i++) {
+	var brand = items[i].product.brand; 
+	if(brand === "Canon" && items[i].product.author.name[0].indexOf("ebay")) {
+		console.log(items[i]);
+	}
+}  
 
 
 
