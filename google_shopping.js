@@ -1,5 +1,5 @@
-var data = require("./products.json")
-
+var data = require("./products.json");
+var items = data['items'];
 // Write your solutions below
 // console.log(data["items"]);
 
@@ -33,14 +33,23 @@ var data = require("./products.json")
 
 /* Question Three*/
 
+// for(var i = 0; i < data['items'].length; i++) {
+// 	var images = data['items'][i].product.images;
+// 	if(images.length > 1) {
+// 		console.log(images);
+// 	}
+// }
+
+
+// Question Four
+
+
 for(var i = 0; i < data['items'].length; i++) {
-	var images = data['items'][i].product.images;
-	if(images.length > 1) {
-		console.log(images);
+	var brand = items[i].product.brand;
+	if(brand === "Canon"){
+		console.log(brand);
 	}
 }
-
-
 
 
 
